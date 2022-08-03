@@ -15,11 +15,6 @@ lowrstr = lowr.split()
 numsstr = nums.split()
 symbstr = symb.split()
 
-#print(capsstr)
-#print(lowrstr)
-#print(numsstr)
-#print(symbstr)
-
 capslist = []
 lowrlist = []
 numslist = []
@@ -31,42 +26,31 @@ lowrrand = random.randrange(6, 8)
 numsrand = random.randrange(6, 10)
 symbrand = random.randrange(4, 6)
 
-#print("caps:", capsrand)
-#print("lowr:", lowrrand)
-#print("nums:", numsrand)
-#print("symb:", symbrand)
-
 # A random number is generated, determining which character in each list is pulled. Process repeated 6 times. Characters
 # pulled are placed in blank list called "capslist".
 for i in range(capsrand):
     x = random.randrange(0, 26)
     capsx = capsstr[x]
     capslist.append(capsx)
-#print(capslist)
 
 for i in range(lowrrand):
     y = random.randrange(0, 26)
     lowry = lowrstr[y]
     lowrlist.append(lowry)
-#print(lowrlist)
 
 for i in range(numsrand):
     z = random.randrange(0, 10)
     numsz = numsstr[z]
     numslist.append(numsz)
-#print(numslist)
 
 for i in range(symbrand):
     w = random.randrange(0, 6)
     symbw = symbstr[w]
     symblist.append(symbw)
-#print(symblist)
 
 # Combine and shuffle lists. Take items from list and places into a complete string.
 full = capslist + lowrlist + numslist + symblist
-#print(full)
 shuffle(full)
-#print(full)
 
 fullstr = ""
 for item in full:
