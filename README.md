@@ -24,7 +24,11 @@ password_generator.py -- {
 
 noun_webcrawler.py -- {
 
-  Utilizing "requests" and "bs4" modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in <li></li> tags. HTML is converted into one long string, then split based on <li> tags. An array is created that resembles the structure [ "<HTML code>" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "<HTML code>" ]. Unimportant content is deleted from the array —— (del spltext[0]) and (del spltext[len(spltext) - 1]) —— leaving only the desired words in the array. A for loop is used to remove any item remaining with an <li> tag; defects.
+  Utilizing "requests" and "bs4" modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in list tags. HTML is converted into one long string, then split based on list tags. An array is created that resembles the structure:
+
+[ "HTML code" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "HTML code" ]
+
+Unimportant content is deleted from the array —— (del spltext[0]), (del spltext[len(spltext) - 1]) —— leaving only words in the array. A for loop is used to remove any item remaining with a list tag; defects.
 
 }
 
