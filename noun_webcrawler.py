@@ -25,12 +25,5 @@ del spltext[last]
 # Cycle through every item and extract items with HTML tags still attached; dubbed "defects"
 for i in spltext:
     if "<" in i:
-        print(spltext.index(i))
         spltext.remove(i)
 print(spltext)
-
-# Check for any possible missed defective items
-for i in spltext:
-    if "<" in i:
-        print(spltext.index(i))
-        spltext.remove(i)
