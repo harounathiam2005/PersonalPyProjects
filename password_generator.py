@@ -26,8 +26,8 @@ lowrrand = random.randrange(6, 8)
 numsrand = random.randrange(6, 10)
 symbrand = random.randrange(4, 6)
 
-# A random number is generated, determining which character in each list is pulled. Process repeated 6 times. Characters
-# pulled are placed in blank list called "capslist".
+# A random number is generated, determining which character in each list is pulled. Process repeated 4-10 times (depending on list). Characters
+# pulled are placed in new blank lists.
 for i in range(capsrand):
     x = random.randrange(0, 26)
     capsx = capsstr[x]
@@ -57,3 +57,7 @@ for item in full:
     fullstr += item
 print("Password:", fullstr)
 print("char length:", len(fullstr))
+
+# Example output:
+# Password: !2K51y6N64%t5!1yOaFZwN#i%O5k
+# char length: 28
