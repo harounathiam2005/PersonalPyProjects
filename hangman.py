@@ -1,5 +1,3 @@
-import requests
-from bs4 import BeautifulSoup
 import random
 
 # Pseudocode for word retrieval system located in noun_webcrawler.py
