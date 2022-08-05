@@ -3,22 +3,7 @@ from bs4 import BeautifulSoup
 import random
 
 # Pseudocode for word retrieval system located in Webcrawler.py
-url = "https://greenopolis.com/list-of-nouns/"
-res = requests.get(url)
-content = res.text
-soup = BeautifulSoup(content, 'html.parser')
-text = soup.find_all('ul')
-strtext = str(text)
-spltext = strtext.split('</li><li>')
-del spltext[0]
-last = len(spltext) - 1
-del spltext[last]
-for i in spltext:
-    if "<" "/" in i:
-        spltext.remove(i)
-for i in spltext:
-    if "/" in i:
-        spltext.remove(i)
+from noun_webcrawler import *
 
 # Player select settings
 mode = input(print("Select difficulty: Enter '1' for easy mode; Enter '2' for hard mode."))
