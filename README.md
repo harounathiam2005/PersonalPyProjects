@@ -32,6 +32,12 @@ Unimportant content is deleted from the array —— (del spltext[0]), (del splt
 
 }
 
+hangman.py -- {
+
+  
+
+}
+
 
 
 
