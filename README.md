@@ -12,7 +12,7 @@ number_game.py -- {
 
 grade_calculator.py -- {
 
-  One of my first programs (EST. 2020).  In school, I would recieve a score on an assignment, which was a number correct out of a total denominator. At the time, I wanted to know what the percentage grade would be; but more often than not, I would only recieve a fraction (correct/total). So I decided to create a function that takes an 2 integers, x (number correct) and y (total) —— and divides for a quotient. The remaining decimal is the percentage. The code converts the decimal into an array and takes the appropriate values from the tenths and hundreths place (now indexes in the array), returning a percentage and a Khan Academy link accordingly.
+  One of my first programs (EST. 2020).  In school, I would recieve a score on an assignment, which was a number correct out of a total denominator. At the time, I wanted to know what the percentage grade would be; but more often than not, I would only recieve a fraction (correct/total). So I decided to create a function that takes an 2 integers, `x` (number correct) and y (total) —— and divides for a quotient. The remaining decimal is the percentage. The code converts the decimal into an array and takes the appropriate values from the tenths and hundreths place (now indexes in the array), returning a percentage and a Khan Academy link accordingly.
 
 }
 
@@ -24,17 +24,21 @@ password_generator.py -- {
 
 noun_webcrawler.py -- {
 
-  Utilizing "requests" and "bs4" modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in list tags. HTML is converted into one long string, then split based on list tags. An array is created that resembles the structure:
+  Utilizing `requests` and `bs4` modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in list tags. HTML is converted into one long string, then split based on list tags. An array is created that resembles the structure:
 
-[ "HTML code" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "HTML code" ]
+`[ "HTML code" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "HTML code" ]`
 
-Unimportant content is deleted from the array —— (del spltext[0]), (del spltext[len(spltext) - 1]) —— leaving only words in the array. A for loop is used to remove any item remaining with a list tag; defects.
+Unimportant content is deleted from the array —— `del spltext[0], del spltext[len(spltext) - 1]` —— leaving only words in the array. A for loop is used to remove any item remaining with a list tag; defects.
 
 }
 
 hangman.py -- {
 
-  
+  Works in conjunction with noun_webcrawler.py to create a full in-line terminal hangman game. Utilizes web-fetching capabilities of noun_webcrawler.py to host a list of words to choose from as a basis for the game. Difficulty parameter; 1 == easy mode (shorter, more common words selected), 2 == hard mode (Full list of 11109 non-defective words to choose from). Code randomly chooses a word from array of words (using random module), converts it into string, then into a series of blank spaces; "_" times the number of letters in the selected word (`"_" * len(word)`). A `lives` variable is called that determines how many chances you get (6) before losing. This increments negatively by one every incorrect guess. All parameters are set to begin the game. Game begins with a check to see if _'s are still present in the word. If so, game moves on. Else, game end w/ victory message. Move on: if player input `guess` is in word, run through a series of if statements to check for invalid arguments (more than one letter, no letter). If input is valid, replace all instances of letter in blanks with `guess`.
+
+Example: `word` = TREE | `guess` = E | Display = _ _ E E
+
+If all chances are depleted before word is completed; i.e. `lives` = 0, game end w/ lose message. 
 
 }
 
