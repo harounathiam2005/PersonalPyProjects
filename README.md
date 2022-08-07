@@ -28,7 +28,7 @@ noun_webcrawler.py -- {
 
 `[ "HTML code" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "HTML code" ]`
 
-Unimportant content is deleted from the array —— `del spltext[0], del spltext[len(spltext) - 1]` —— leaving only words in the array. A for loop is used to remove any item remaining with a list tag; defects.
+Unimportant content is deleted from the array —— `del spltext[0]`, `del spltext[len(spltext) - 1]` —— leaving only words in the array. A for loop is used to remove any item remaining with a list tag; defects.
 
 }
 
