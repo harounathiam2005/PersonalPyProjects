@@ -18,13 +18,13 @@ grade_calculator.py -- {
 
 password_generator.py -- {
 
-  Creates a strong, secure password from four strings of uppercase letters, lowercase letters, integers, and symbols. These strings are converted into lists. A random number is generated; determining how many items from each list are to be used. This variable is randomized each time to decrease similarity between generated passwords and to avoid predictablility. This variable is set as the range of for loops that pick random characters from each list x number of times. Each list is compiled into one list to create a secure password.
+  Creates a strong, secure password from four strings of uppercase letters, lowercase letters, integers, and symbols. These strings are converted into lists. A random number is generated; determining how many items from each list are to be used. This variable is randomized each time to decrease similarity between generated passwords and to avoid predictablility. This variable is set as the range of for loops that pick random characters from each list `x` number of times. Each list is compiled into one list to create a secure password.
 
 }
 
 noun_webcrawler.py -- {
 
-  Utilizing `requests` and `bs4` modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in list tags. HTML is converted into one long string, then split based on list tags. An array is created that resembles the structure:
+  Utilizing `requests` and `bs4` modules to extract data from HTML files, this program extracts a long list of words from an online website; i.e. a webcrawler. The program requests access to the URL and when granted, extracts raw HTML from the site. The site chosen contains a long list of nouns nested in list tags. HTML is converted into one long string, then `.split()` based on list tags. An array is created that resembles the structure:
 
 `[ "HTML code" , "desired word" , "desired word" , "desired word" , "desired word" , ... , "HTML code" ]`
 
