@@ -6,7 +6,7 @@ Indludes: Various python programs —— hangman, webcrawler, grade calculator, 
 
 number_game.py -- {
 
-  My first documented program (EST. 2020). Utilizing the random module, this input-based python program generates a random integer. Input "y" when prompted to play. You have three chances to guess the hidden number.
+  My first documented program (EST. 2020). Utilizing `random` module, this input-based python program generates a random integer. Input "y" when prompted to play. You have three chances to guess the hidden number.
 
 }
 
