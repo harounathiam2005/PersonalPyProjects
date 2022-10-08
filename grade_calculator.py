@@ -22,9 +22,8 @@ def percentage(x, y):
             print(score, "% B")
         elif 90 <= int(score) < 100:
             print(score, "% A")
-    elif div >= 1:
+    else:
         ints = [str(i) for i in str(div)]
-        print(ints)
         items = len(ints)
         if items == 3:
             score = ints[0] + ints[2] + '0'
@@ -32,7 +31,7 @@ def percentage(x, y):
         elif items == 4:
             score = ints[0] + ints[2] + ints[3]
             print(score, '% A')
-        elif items >= 5:
+        else:
             if int(ints[4]) > 5:
                 int3 = int(ints[3]) + 1
                 intt = str(int3)
