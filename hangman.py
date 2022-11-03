@@ -111,7 +111,7 @@ while True:
             # Check for errors.
             if guess in blanks:
                 print("You already guessed that!")
-                lives = lives - 1
+                lives -= 1
                 print("Lives: ", lives)
                 if guess not in guessblanks:
                     guessblanks.append(guess)
@@ -149,7 +149,7 @@ while True:
                 print("Already guessed!")
                 print(guessblanks)
             print(' '.join(blanks))
-            lives = lives - 1
+            lives -= 1
             print("Lives: ", lives)
             stickman()
             print("")
