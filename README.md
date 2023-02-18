@@ -20,7 +20,7 @@ One of my first programs (EST. 2020). This file exists here for legacy. It is la
 
 password_generator.py -- {
 
-  Utilizing the `random` module, creates a strong, secure password from four strings of uppercase letters, lowercase letters, integers, and symbols. These strings are converted into lists. A random number is generated; determining how many items from each list are to be used. This variable is randomized each time to decrease similarity between generated passwords and to avoid predictablility. This variable is set as the range of for loops that pick random characters from each list `x` number of times. Each list is compiled into one list to create a secure password.
+  Utilizing the `random` module, creates a strong, (not cryptographically secure, for this use `secrets` modue) password from four strings of uppercase letters, lowercase letters, integers, and symbols. These strings are converted into lists. A random number is generated; determining how many items from each list are to be used. This variable is randomized each time to decrease similarity between generated passwords and to avoid predictablility. This variable is set as the range of for loops that pick random characters from each list `x` number of times. Each list is compiled into one list to create a secure password.
 
 }
 
