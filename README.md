@@ -12,7 +12,9 @@ number_game.py -- {
 
 grade_calculator.py -- {
 
-  One of my first programs (EST. 2020).  In school, I would recieve a score on an assignment, which was a number correct out of a total denominator. At the time, I wanted to know what the percentage grade would be; but more often than not, I would only recieve a fraction (correct/total). So I decided to create a function that takes 2 integers, `x` (number correct) and `y` (total) —— and divides for a quotient. The remaining decimal is the percentage. The code converts the decimal into an array and takes the appropriate values from the tenths and hundreths place (now items in the array), returning a percentage and a Khan Academy link accordingly.
+One of my first programs (EST. 2020). This file exists here for legacy. It is largely ineffective code that is too bulky for its purpose...
+
+ In school, I would recieve a score on an assignment, which was a number correct out of a total denominator. At the time, I wanted to know what the percentage grade would be; but more often than not, I would only recieve a fraction (correct/total). So I decided to create a function that takes 2 integers, `x` (number correct) and `y` (total) —— and divides for a quotient. The remaining decimal is the percentage. The code converts the decimal into an array and takes the appropriate values from the tenths and hundreths place (now items in the array), returning a percentage and a Khan Academy link accordingly.
 
 }
 
