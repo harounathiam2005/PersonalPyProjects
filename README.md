@@ -1,6 +1,6 @@
 # PersonalPyProjects
 
-A collection of projects and demonstration of language proficiency.
+A collection of projects demonstrating language proficiency.
 
 Indludes: Various python programs —— hangman, webcrawler, grade calculator, password generator, number game
 
