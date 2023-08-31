@@ -1,6 +1,8 @@
 # This program will take the number of questions you got right out of the total amount of questions to calculate your
 # percentage.
 
+## FIRST PYTHON PROJECT EVER
+
 def percentage(x, y):
     div = x / y
     if div < 1:
