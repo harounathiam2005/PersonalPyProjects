@@ -24,15 +24,7 @@ class Account:
     return self.password
 
   def get_pass_mutate(self):
-    pass_arr = [i for i in self.password]
-    if len(pass_arr) == 1:
-      pass_arr[0] = "*"
-    elif len(pass_arr) <= 2:
-      pass_arr[1] = "*"
-    else:
-      for i in range(1, len(pass_arr) - 1):
-        pass_arr[i] = "*"
-    return "".join(pass_arr)
+    return self.password[0] + self.password[1:len(self.password) - 2] + self.password[len(self.password) - 1]
 
   def get_balance(self):
     return self.balance
@@ -60,13 +52,10 @@ class Account:
     print(self.current_input)
 
   def interpret(self, word):
-    lword = word.lower()
-    words = lword.split()
+    words = word.lower().split()
     confidence = 0
-    threshold = 2
     for list in self.request_vars:
       threshold = list[len(list) - 1]
-      print(threshold)
       for i in list:
         if i in words:
           confidence += 1
